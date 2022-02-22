@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/optomcalc-js/static/css/main.27337ea7.css",
-    "main.js": "/optomcalc-js/static/js/main.b6e48174.js",
-    "static/js/787.88425a3f.chunk.js": "/optomcalc-js/static/js/787.88425a3f.chunk.js",
-    "index.html": "/optomcalc-js/index.html",
-    "main.27337ea7.css.map": "/optomcalc-js/static/css/main.27337ea7.css.map",
-    "main.b6e48174.js.map": "/optomcalc-js/static/js/main.b6e48174.js.map",
-    "787.88425a3f.chunk.js.map": "/optomcalc-js/static/js/787.88425a3f.chunk.js.map"
+    "main.css": "/optomtools/static/css/main.27337ea7.css",
+    "main.js": "/optomtools/static/js/main.10104817.js",
+    "static/js/787.88425a3f.chunk.js": "/optomtools/static/js/787.88425a3f.chunk.js",
+    "index.html": "/optomtools/index.html",
+    "main.27337ea7.css.map": "/optomtools/static/css/main.27337ea7.css.map",
+    "main.10104817.js.map": "/optomtools/static/js/main.10104817.js.map",
+    "787.88425a3f.chunk.js.map": "/optomtools/static/js/787.88425a3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27337ea7.css",
-    "static/js/main.b6e48174.js"
+    "static/js/main.10104817.js"
   ]
 }
