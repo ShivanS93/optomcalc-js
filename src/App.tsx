@@ -8,7 +8,7 @@ import MinimumBlankSize from "./views/minimum-blank-size";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/optomtools">
         <div className="grid grid-rows-1 bg-slate-50">
           <div className="py-4 px-6 bg- border border-b-slate-400">
             <Header />
