@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/optomtools/static/css/main.27337ea7.css",
-    "main.js": "/optomtools/static/js/main.10104817.js",
+    "main.css": "/optomtools/static/css/main.6a74842e.css",
+    "main.js": "/optomtools/static/js/main.647ed8e8.js",
     "static/js/787.88425a3f.chunk.js": "/optomtools/static/js/787.88425a3f.chunk.js",
     "index.html": "/optomtools/index.html",
-    "main.27337ea7.css.map": "/optomtools/static/css/main.27337ea7.css.map",
-    "main.10104817.js.map": "/optomtools/static/js/main.10104817.js.map",
+    "main.6a74842e.css.map": "/optomtools/static/css/main.6a74842e.css.map",
+    "main.647ed8e8.js.map": "/optomtools/static/js/main.647ed8e8.js.map",
     "787.88425a3f.chunk.js.map": "/optomtools/static/js/787.88425a3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27337ea7.css",
-    "static/js/main.10104817.js"
+    "static/css/main.6a74842e.css",
+    "static/js/main.647ed8e8.js"
   ]
 }
