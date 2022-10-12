@@ -9,7 +9,7 @@ import BackVertexPower from "./views/backVertexPower";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/optomtools">
+      <BrowserRouter basename="/optomcalc">
         <div className="grid grid-rows-1">
           <div className="py-4 px-6 border bg-blue-800 text-white">
             <Header />

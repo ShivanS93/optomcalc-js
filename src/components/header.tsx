@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <div className="flex justify-center">
-      <Link to="/">OptomTools</Link>
+      <Link to="/">OptomCalc</Link>
     </div>
   );
 };

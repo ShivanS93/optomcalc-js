@@ -1,8 +1,6 @@
-import { useState, ChangeEvent, FunctionComponent } from "react";
-import Input from "../components/input";
-import Output from "../components/output";
+import React from "react";
 
-const BackVertexPower = () => {
+const BackVertexPower: React.FC = () => {
   return <></>;
 };
 

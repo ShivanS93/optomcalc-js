@@ -1,9 +1,4 @@
-import {
-  useState,
-  ChangeEvent,
-  FunctionComponent,
-  PropsWithChildren,
-} from "react";
+import React, { useState, ChangeEvent, PropsWithChildren } from "react";
 import Input from "../components/input";
 
 interface CalculateMinimumBlankSizeProps {
@@ -15,7 +10,7 @@ interface CalculateMinimumBlankSizeProps {
   anyErrors: boolean[];
 }
 
-const CalculateMinimumBlankSize: FunctionComponent<
+const CalculateMinimumBlankSize: React.FC<
   PropsWithChildren<CalculateMinimumBlankSizeProps>
 > = (props) => {
   // performing calculations to workout minimum blank size
@@ -62,7 +57,7 @@ const CalculateMinimumBlankSize: FunctionComponent<
   );
 };
 
-const MinimumBlankSize: FunctionComponent = () => {
+const MinimumBlankSize: React.FC = () => {
   // main component
   // return minimum blank size
 
@@ -92,7 +87,6 @@ const MinimumBlankSize: FunctionComponent = () => {
     errorMessage: "",
   });
   const updateRightPD = (e: ChangeEvent<HTMLInputElement>) => {
-    let rightPDNumber: number = Number(e.target.value);
     setErrorRightPD({ isError: false, errorMessage: "" });
     if (!e.target.value) {
       setErrorRightPD({ isError: true, errorMessage: "Please enter right PD" });
