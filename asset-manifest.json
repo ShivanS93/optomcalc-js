@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/optomcalc/static/css/main.6a74842e.css",
-    "main.js": "/optomcalc/static/js/main.4cf7120a.js",
+    "main.css": "/optomcalc/static/css/main.9d6bcc8b.css",
+    "main.js": "/optomcalc/static/js/main.5c2814cc.js",
     "static/js/787.47e15df9.chunk.js": "/optomcalc/static/js/787.47e15df9.chunk.js",
     "index.html": "/optomcalc/index.html",
-    "main.6a74842e.css.map": "/optomcalc/static/css/main.6a74842e.css.map",
-    "main.4cf7120a.js.map": "/optomcalc/static/js/main.4cf7120a.js.map",
+    "main.9d6bcc8b.css.map": "/optomcalc/static/css/main.9d6bcc8b.css.map",
+    "main.5c2814cc.js.map": "/optomcalc/static/js/main.5c2814cc.js.map",
     "787.47e15df9.chunk.js.map": "/optomcalc/static/js/787.47e15df9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a74842e.css",
-    "static/js/main.4cf7120a.js"
+    "static/css/main.9d6bcc8b.css",
+    "static/js/main.5c2814cc.js"
   ]
 }
