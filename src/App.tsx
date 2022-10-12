@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Navbar from "./components/navbar";
 import CylindricalTransposition from "./views/cylindrical-transposition";
 import MinimumBlankSize from "./views/minimum-blank-size";
+import BackVertexPower from "./views/backVertexPower";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                   path="minimum_blank_size"
                   element={<MinimumBlankSize />}
                 />
+                <Route path="back_vertex_power" element={<BackVertexPower />} />
               </Routes>
             </div>
           </div>

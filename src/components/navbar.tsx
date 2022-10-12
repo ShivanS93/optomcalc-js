@@ -33,6 +33,9 @@ const Navbar = () => {
         <li>
           <CustomLink to="/minimum_blank_size">Minimum Blank Size</CustomLink>
         </li>
+        <li>
+          <CustomLink to="/back_vertex_power">Back Vertex Power</CustomLink>
+        </li>
       </ul>
     </nav>
   );
