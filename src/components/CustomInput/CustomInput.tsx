@@ -1,10 +1,6 @@
-import {
-  FunctionComponent,
-  ChangeEventHandler,
-  InputHTMLAttributes,
-} from "react";
+import React, { ChangeEventHandler, InputHTMLAttributes } from "react";
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface CustomInputProps extends InputHTMLAttributes<HTMLInputElement> {
   value: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
   label: string;
@@ -12,7 +8,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   errorMessage: string;
 }
 
-const Input: FunctionComponent<InputProps> = (props) => {
+const CustomInput: React.FC<CustomInputProps> = (props) => {
   return (
     <div
       className={`flex flex-col gap-1 cus-card ${
@@ -46,4 +42,4 @@ const Input: FunctionComponent<InputProps> = (props) => {
   );
 };
 
-export default Input;
+export default CustomInput;

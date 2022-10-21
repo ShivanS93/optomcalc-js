@@ -1,19 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./views/home";
-import Header from "./components/header";
-import Navbar from "./components/navbar";
-import CylindricalTransposition from "./views/cylindrical-transposition";
-import MinimumBlankSize from "./views/minimum-blank-size";
-import BackVertexPower from "./views/backVertexPower";
+import Home from "./views/Home";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import CylindricalTransposition from "./views/CylindricalTransposition";
+import MinimumBlankSize from "./views/MinimumBlankSize";
+import BackVertexPower from "./views/BackVertexPower";
+import CrossCylinder from "./views/CrossCylinder";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/optomcalc">
         <div className="grid grid-rows-1">
-          <div className="py-4 px-6 border bg-blue-800 text-white">
-            <Header />
-          </div>
+          <Header />
           <div className="grid grid-cols-5 gap-1 p-6">
             <div>
               <Navbar />
@@ -30,6 +29,7 @@ function App() {
                   element={<MinimumBlankSize />}
                 />
                 <Route path="back_vertex_power" element={<BackVertexPower />} />
+                <Route path="cross_cylinder" element={<CrossCylinder />} />
               </Routes>
             </div>
           </div>

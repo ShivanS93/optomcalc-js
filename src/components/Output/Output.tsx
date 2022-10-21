@@ -17,7 +17,7 @@ const Output: FunctionComponent<PropsWithChildren<OutputProps>> = (props) => {
   const result = props.calculationFunction(
     props.sphereValue,
     props.cylinderValue,
-    props.axisValue
+    props.axisValue,
   );
   return (
     <div className="cus-card">

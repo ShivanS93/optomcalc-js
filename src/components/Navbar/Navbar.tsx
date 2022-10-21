@@ -24,19 +24,21 @@ const CustomLink: React.FC<LinkProps> = ({ children, to, ...props }) => {
 const Navbar: React.FC = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <CustomLink to="/cylindrical_transposition">
-            Cylindrical Transposition
-          </CustomLink>
-        </li>
-        <li>
-          <CustomLink to="/minimum_blank_size">Minimum Blank Size</CustomLink>
-        </li>
-        <li>
-          <CustomLink to="/back_vertex_power">Back Vertex Power</CustomLink>
-        </li>
-      </ul>
+      <div className="drawer-side">
+        <ul className="menu p-4 overflow-y-auto w-80">
+          <li>
+            <CustomLink to="/cylindrical_transposition">
+              Cylindrical Transposition
+            </CustomLink>
+          </li>
+          <li>
+            <CustomLink to="/minimum_blank_size">Minimum Blank Size</CustomLink>
+          </li>
+          <li>
+            <CustomLink to="/back_vertex_power">Back Vertex Power</CustomLink>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

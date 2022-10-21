@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, PropsWithChildren } from "react";
-import Input from "../components/input";
+import CustomInput from "../../components/CustomInput";
 
 interface CalculateMinimumBlankSizeProps {
   rightPD: string;
@@ -142,7 +142,7 @@ const MinimumBlankSize: React.FC = () => {
         <h1>Minimum Blank Size</h1>
       </div>
       <div className="flex flex-row flex-wrap p-4 gap-6">
-        <Input
+        <CustomInput
           value={rightPD}
           onChange={updateRightPD}
           type="number"
@@ -152,7 +152,7 @@ const MinimumBlankSize: React.FC = () => {
           isError={errorRightPD.isError}
           errorMessage={errorRightPD.errorMessage}
         />
-        <Input
+        <CustomInput
           value={leftPD}
           onChange={updateLeftPD}
           type="number"
@@ -162,7 +162,7 @@ const MinimumBlankSize: React.FC = () => {
           isError={errorLeftPD.isError}
           errorMessage={errorLeftPD.errorMessage}
         />
-        <Input
+        <CustomInput
           value={frameDBL}
           onChange={updateFrameDBL}
           type="number"
@@ -172,7 +172,7 @@ const MinimumBlankSize: React.FC = () => {
           isError={errorFrameDBL.isError}
           errorMessage={errorFrameDBL.errorMessage}
         />
-        <Input
+        <CustomInput
           value={frameSize}
           onChange={updateFrameSize}
           type="number"
@@ -182,7 +182,7 @@ const MinimumBlankSize: React.FC = () => {
           isError={errorFrameSize.isError}
           errorMessage={errorFrameSize.errorMessage}
         />
-        <Input
+        <CustomInput
           value={effectiveDiameter}
           onChange={updateEffectiveDiameter}
           type="number"

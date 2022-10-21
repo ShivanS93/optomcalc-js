@@ -10,9 +10,6 @@
   h3 {
     @apply text-lg;
   }
-  /* cus-input {
-    @apply;
-  } */
   .cus-card {
     @apply p-4 rounded-xl shadow-md border max-w-fit;
   }

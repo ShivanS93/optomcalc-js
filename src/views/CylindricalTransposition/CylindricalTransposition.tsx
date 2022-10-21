@@ -1,11 +1,11 @@
 import { useState, ChangeEvent, FunctionComponent } from "react";
-import Input from "../components/input";
-import Output from "../components/output";
+import CustomInput from "../../components/CustomInput";
+import Output from "../../components/Output";
 
 function calculateCylindricalTransposition(
   sphere: string,
   cylinder: string,
-  axis: string
+  axis: string,
 ) {
   // performing cylindrical transposition
   // convert types
@@ -91,7 +91,7 @@ const CylindricalTransposition: FunctionComponent = () => {
         <h1>Cylindrical Transposition</h1>
       </div>
       <div className="flex flex-row flex-wrap p-4 gap-6">
-        <Input
+        <CustomInput
           value={sphere}
           onChange={updateSphere}
           type="number"
@@ -101,7 +101,7 @@ const CylindricalTransposition: FunctionComponent = () => {
           isError={sphereError.isError}
           errorMessage={sphereError.errorMessage}
         />
-        <Input
+        <CustomInput
           value={cylinder}
           onChange={updateCylinder}
           type="number"
@@ -111,7 +111,7 @@ const CylindricalTransposition: FunctionComponent = () => {
           isError={cylinderError.isError}
           errorMessage={cylinderError.errorMessage}
         />
-        <Input
+        <CustomInput
           value={axis}
           onChange={updateAxis}
           type="number"
@@ -142,8 +142,3 @@ const CylindricalTransposition: FunctionComponent = () => {
 };
 
 export default CylindricalTransposition;
-
-// checking if react versions are the same
-// require("react-dom");
-// window.React2 = require("react");
-// console.log(window.React1 === window.React2);
