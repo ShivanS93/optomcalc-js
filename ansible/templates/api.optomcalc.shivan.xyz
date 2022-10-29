@@ -1,0 +1,19 @@
+upstream {{ app_name }}_backend {
+	server 0.0.0.0:{{ backend_app_port }};
+}
+
+server {
+	listen 80;
+	server_name api.{{ app_name }}.shivan.xyz;
+
+	location / {
+		include proxy_params;
+		proxy_pass http://{{ app_name }}_backend;
+	}
+
+	location = / {
+		include proxy_params;
+		proxy_pass http://{{ app_name }}_backend;
+	}
+
+}

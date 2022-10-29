@@ -1,0 +1,28 @@
+---
+version: "3.8"
+
+services:
+  backend:
+    container_name: optomcalc-backend
+    build: ./backend
+    env_file:
+      - .env
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ./backend/:/code/
+    restart: always
+
+  frontend:
+    container_name: optomcalc-frontend
+    build: ./frontend
+    depends_on:
+      - backend
+    env_file:
+      - .env
+    ports:
+      - "${FRONTEND_PORT:-3000}:3000"
+    volumes:
+      - ./frontend/src/:/code/src/
+      - ./frontend/public/:/code/public/
+    restart: always
