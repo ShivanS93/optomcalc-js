@@ -1,6 +1,8 @@
 ---
 - name: Deployer Recipe
-  hosts: shivan.xyz
+  hosts: 206.189.82.46
+  set_fact:
+    ansible_port: 24
   become: true
   vars:
     app_name: optomcalc
