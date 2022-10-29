@@ -1,6 +1,6 @@
 ---
 - name: Deployer Recipe
-  gather_facts: no
+  hosts: 206.189.82.46
   become: true
   vars:
     app_name: optomcalc
