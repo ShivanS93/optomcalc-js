@@ -21,5 +21,5 @@ jobs:
         uses: dawidd6/action-ansible-playbook@v2
         with:
           playbook: ./ansible/deploy.yml
+          hosts: ./ansible/hosts
           key: ${{secrets.SSH_PRIVATE_KEY}}
-          known_hosts: ./ansible/hosts
