@@ -22,3 +22,4 @@ jobs:
         with:
           playbook: ./ansible/deploy.yml
           key: ${{secrets.SSH_PRIVATE_KEY}}
+          options: --inventory ansible/hosts
